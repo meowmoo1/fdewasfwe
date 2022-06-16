@@ -1,4 +1,3 @@
-
 <audio src="TalaDontOpen.ogg" controls="controls" autoplay>
 Your browser does not support the audio element.
 </audio>
@@ -127,28 +126,44 @@ Your browser does not support the audio element.
 
     <font size="+1">
     <p style="color:black">storage unit</p>
-    <input name="storage unit" type="range" min="0" max="10" value="0" oninput="this.form.storageunit.value=this.value"  required />
-    <output id="this.form.storageunit" name="storageunit"></output>
-
+    <!--<input name="storage unit" type="range" min="0" max="10" value="0" oninput="this.form.storageunit.value=this.value"  required />
+    <output id="this.form.storageunit" name="storageunit"></output>-->
+    <div class="number-input">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+      <input class="quantity" min="0" name="storage unit" value="0" type="number">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
 
     <!--<input name="high level" type="number" placeholder="high level" required>-->
 
+
+    <!--<input name="high level" type="range" min="0" max="10" value="0" oninput="this.form.high.value=this.value"  required />
+    <output id="this.form.high" name="high"></output>-->
+
     <p style="color:black">high level</p>
-    <input name="high level" type="range" min="0" max="10" value="0" oninput="this.form.high.value=this.value"  required />
-    <output id="this.form.high" name="high"></output>
+    <div class="number-input">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+      <input class="quantity" min="0" name="high level" value="0" type="number">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
 
     <!--<input name="middle level" type="number" placeholder="middle level" required>-->
 
     <p style="color:black">middle level</p>
-    <input name="middle level" type="range" min="0" max="10" value="0" oninput="this.form.middlelevel.value=this.value"  required />
-    <output id="this.form.middlelevel" name="middlelevel"></output>
+    <!--<input name="middle level" type="range" min="0" max="10" value="0" oninput="this.form.middlelevel.value=this.value"  required />
+    <output id="this.form.middlelevel" name="middlelevel"></output>-->
+    <div class="number-input">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+      <input class="quantity" min="0" name="middle level" value="0" type="number">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
 
     <!--<input name="lower level" type="number" placeholder="lower level" required>-->
 
     <p style="color:black">lower level</p>
-    <input name="lower level" type="range" min="0" max="10" value="0" oninput="this.form.lowerlevel.value=this.value"  required />
-    <output id="this.form.lowerlevel" name="lowerlevel"></output>
-
+  <!--  <input name="lower level" type="range" min="0" max="10" value="0" oninput="this.form.lowerlevel.value=this.value"  required />
+    <output id="this.form.lowerlevel" name="lowerlevel"></output>-->
+    <div class="number-input">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+      <input class="quantity" min="0" name="lower level" value="0" type="number">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
 
     <br />
     <br />
@@ -178,36 +193,56 @@ Your browser does not support the audio element.
     <!--<input name="storage unit (T)" type="number" placeholder="storage unit (T)" required>-->
 
     <p style="color:black">storage unit (T)</p>
-    <input name="storage unit (T)" type="range" min="0" max="10" value="0" oninput="this.form.StorageUnitT.value=this.value"  required />
-    <output id="this.form.StorageUnitT" name="StorageUnitT"></output>
+    <!--<input name="storage unit (T)" type="range" min="0" max="10" value="0" oninput="this.form.StorageUnitT.value=this.value"  required />
+    <output id="this.form.StorageUnitT" name="StorageUnitT"></output>-->
+    <div class="number-input">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+      <input class="quantity" min="0" name="storage unit (T)" value="0" type="number">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
         <br />
         <br />
 
     <!--<input name="high level (T)" type="number" placeholder="high level (T)" required>-->
     <p style="color:black">high level (T)</p>
-    <input name="high level (T)" type="range" min="0" max="20" value="0" oninput="this.form.HighLevel.value=this.value"  required />
-    <output id="this.form.HighLevelT" name="HighLevel"></output>
+    <!--<input name="high level (T)" type="range" min="0" max="20" value="0" oninput="this.form.HighLevel.value=this.value"  required />
+    <output id="this.form.HighLevelT" name="HighLevel"></output>-->
+    <div class="number-input">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+      <input class="quantity" min="0" name="high level (T)" value="0" type="number">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
         <br />
         <br />
 
     <!--<input name="middle level (T)" type="number" placeholder="middle level (T)" required>-->
     <p style="color:black">middle level (T)</p>
-    <input name="middle level (T)" type="range" min="0" max="20" value="0" oninput="this.form.MiddleLevelT.value=this.value"  required />
-    <output id="this.form.MiddleLevelT" name="MiddleLevelT"></output>
+    <!--<input name="middle level (T)" type="range" min="0" max="20" value="0" oninput="this.form.MiddleLevelT.value=this.value"  required />
+    <output id="this.form.MiddleLevelT" name="MiddleLevelT"></output>-->
+    <div class="number-input">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+      <input class="quantity" min="0" name="middle level (T)" value="0" type="number">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
         <br />
         <br />
 
     <!--<input name="lower level (T)" type="number" placeholder="lower level (T)" required>-->
     <p style="color:black">lower level (T)</p>
-    <input name="lower level (T)" type="range" min="0" max="20" value="0" oninput="this.form.LowerLevelT.value=this.value"  required />
-    <output id="this.form.LowerLevelT" name="LowerLevelT"></output>
+    <!--<input name="lower level (T)" type="range" min="0" max="20" value="0" oninput="this.form.LowerLevelT.value=this.value"  required />
+    <output id="this.form.LowerLevelT" name="LowerLevelT"></output>-->
+    <div class="number-input">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+      <input class="quantity" min="0" name="lower level (T)" value="0" type="number">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
         <br />
         <br />
 
     <!--<input name="share shiping hab (T)" type="number" placeholder="share shiping hab (T)" required>-->
     <p style="color:black">share shiping hab (T)</p>
-    <input name="share shiping hab (T)" type="range" min="0" max="20" value="0" oninput="this.form.ShareShipingHabT.value=this.value"  required />
-    <output id="this.form.ShareShipingHabT" name="ShareShipingHabT"></output>
+    <!--<input name="share shiping hab (T)" type="range" min="0" max="20" value="0" oninput="this.form.ShareShipingHabT.value=this.value"  required />
+    <output id="this.form.ShareShipingHabT" name="ShareShipingHabT"></output>-->
+    <div class="number-input">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+      <input class="quantity" min="0" name="share shiping hab (T)" value="0" type="number">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
         <br />
         <br />
         <hr/>
@@ -216,43 +251,68 @@ Your browser does not support the audio element.
 
     <!--<input name="storage unit (EG)" type="number" placeholder="storage unit (EG)" required>-->
     <p style="color:black">storage unit (EG)</p>
-    <input name="storage unit (EG)" type="range" min="0" max="20" value="0" oninput="this.form.StorageUnitEG.value=this.value"  required />
-    <output id="this.form.StorageUnitEG" name="StorageUnitEG"></output>
+    <!--<input name="storage unit (EG)" type="range" min="0" max="20" value="0" oninput="this.form.StorageUnitEG.value=this.value"  required />
+    <output id="this.form.StorageUnitEG" name="StorageUnitEG"></output>-->
+    <div class="number-input">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+      <input class="quantity" min="0" name="storage unit (EG)" value="0" type="number">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
         <br />
         <br />
 
     <!--<input name="high level (EG)" type="number" placeholder="high level (EG)" required>-->
     <p style="color:black">high level (EG)</p>
-    <input name="high level (EG)" type="range" min="0" max="20" value="0" oninput="this.form.HighLevelEG.value=this.value"  required />
-    <output id="this.form.HighLevelEG" name="HighLevelEG"></output>
+    <!--<input name="high level (EG)" type="range" min="0" max="20" value="0" oninput="this.form.HighLevelEG.value=this.value"  required />
+    <output id="this.form.HighLevelEG" name="HighLevelEG"></output>-->
+    <div class="number-input">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+      <input class="quantity" min="0" name="high level (EG)" value="0" type="number">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
         <br />
         <br />
 
    <!-- <input name="middle level (EG)" type="number" placeholder="middle level (EG)" required>-->
             <p style="color:black">middle level (EG)</p>
-    <input name="middle level (EG)" type="range" min="0" max="10" value="0" oninput="this.form.MiddleLevelEG.value=this.value"  required />
-    <output id="MiddleLevelEG" name="MiddleLevelEG"></output>
+    <!--<input name="middle level (EG)" type="range" min="0" max="10" value="0" oninput="this.form.MiddleLevelEG.value=this.value"  required />
+    <output id="MiddleLevelEG" name="MiddleLevelEG"></output>-->
+    <div class="number-input">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+      <input class="quantity" min="0" name="middle level (EG)" value="0" type="number">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
     <br />
     <br />
 
 <!--    <input name="lower level (EG)" type="number" placeholder="lower level (EG)" required>-->
              <p style="color:black">lower level (EG)</p>
-    <input name="lower level (EG)" type="range" min="0" max="10" value="0" oninput="this.form.LowerLevelEG.value=this.value"  required />
-    <output id="LowerLevelEG" name="LowerLevelEG"></output>
+    <!--<input name="lower level (EG)" type="range" min="0" max="10" value="0" oninput="this.form.LowerLevelEG.value=this.value"  required />
+    <output id="LowerLevelEG" name="LowerLevelEG"></output>-->
+    <div class="number-input">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+      <input class="quantity" min="0" name="lower level (EG)" value="0" type="number">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
     <br />
     <br />
 
    <!-- <input name="share shiping hub (EG)" type="number" placeholder="share shiping hub (EG)" required>-->
          <p style="color:black">share shiping hub (EG)</p>
-    <input name="share shiping hub (EG)" type="range" min="0" max="10" value="0" oninput="this.form.ShareShipingHub.value=this.value"  required />
-    <output id="ShareShipingHub" name="ShareShipingHub"></output>
+    <!--<input name="share shiping hub (EG)" type="range" min="0" max="10" value="0" oninput="this.form.ShareShipingHub.value=this.value"  required />
+    <output id="ShareShipingHub" name="ShareShipingHub"></output>-->
+    <div class="number-input">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+      <input class="quantity" min="0" name="share shiping hub (EG)" value="0" type="number">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
+    <br />
     <br />
     <br />
 
     <!--<input name="how much duck delivered" type="number" placeholder="how match duck delivered" required>-->
         <p style="color:black">how much duck delivered</p>
-    <input name="how much duck delivered" type="range" min="0" max="10" value="0" oninput="this.form.HowMuchDuckDelivered.value=this.value"  required />
-    <output id="HowMuchDuckDelivered" name="HowMuchDuckDelivered"></output>
+    <!--<input name="how much duck delivered" type="range" min="0" max="10" value="0" oninput="this.form.HowMuchDuckDelivered.value=this.value"  required />
+    <output id="HowMuchDuckDelivered" name="HowMuchDuckDelivered"></output>-->
+    <div class="number-input">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+      <input class="quantity" min="0" name="how much duck delivered" value="0" type="number">
+      <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
     <br />
     <br />
 
