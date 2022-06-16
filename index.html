@@ -52,14 +52,15 @@
                       ""ooooooooo""
 </pre>
 <body>
-  <<style media="screen">
+  <style media="screen">
     input[type='number']{
     width: 120px;
 } 
   </style>
-<form
+<form 
 
-
+onsubmit="document.getElementById('myButton').disabled=true;
+document.getElementById('myButton').value='Submitting, please wait...';"
         method="POST"
         action=https://script.google.com/macros/s/AKfycbxKJiEWeTbVgcE8Lm7Df-yKqe1VfekUUOob1x_4V8hE9BOgm_9YbHT0tfmvGM3MBLFM/exec
         xmlns="http://www.w3.org/1999/html">
@@ -82,7 +83,7 @@
         <br />
     <!--<input name="cup or duck?" type="text" placeholder="cup or duck?" required><label for="cars">Choose a car:</label>-->
 
-<label for="CupOrDuck">Choose cup or duck:</label>
+<label for="CupOrDuck">cup or duck:</label>
 <select name="cup or duck?" id="CupOrDuck" style="font-size:16pt;">
   <option value="cup">Cup</option>
   <option value="duck">duck</option>
@@ -96,7 +97,7 @@
     <br>
 
     <!--<input name="otonomi on?" type="text" placeholder="otonomi on?" required>-->
-<label for="otonomi on?">otonomi on?:</label>
+<label for="otonomi on?">autonimus on?:</label>
 <select name="otonomi on?" id="otonomi on?" style="font-size:16pt;">
   <option value="yes">yes</option>
   <option value="no">no</option>
@@ -112,7 +113,7 @@
         <br />
         <br />
     <!--<input name="otonimus duck delivered?" type="text" placeholder="otonimus duck delivered?" required>-->
-<label for="otonimus duck delivered?">otonimus duck delivered?:</label>
+<label for="otonimus duck delivered?">autonimus duck delivered?:</label>
 <select name="otonimus duck delivered?" id="otonimus duck delivered?" style="font-size:16pt;">
   <option value="yes">yes</option>
   <option value="no">no</option>
@@ -315,7 +316,7 @@
 
     <!--<input name="parking? where?" type="text" placeholder="parking? where?" required>-->
 
-<label for="parking? where?">parking? where?:</label>
+<label for="parking? where?">where did the robot park?:</label>
 <select name="parking? where?" id="parking? where?" style="font-size:16pt;">
   <option value="didnt park">didnt park</option>
   <option value="warehouse">warehouse</option>
@@ -342,8 +343,7 @@
 
     <br />
     <br />
-  <button  type="submit" style="font-size:24pt;"><b>submit</b></button>
-
+  <button  type="submit" id="myButton" value="" style="font-size:24pt;" onsubmit= ><b>submit</b></button>
     </font>
     <style>
       .hihi{
