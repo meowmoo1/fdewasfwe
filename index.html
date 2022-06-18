@@ -5,6 +5,8 @@
 } 
   </style>
 <form
+onsubmit="document.getElementById('myButton').disabled=true;
+document.getElementById('myButton').value='Submitting, please wait...';"
 
 
         method="POST"
@@ -293,7 +295,7 @@
 
     <br />
     <br />
-  <button  type="submit" style="font-size:30pt;"><b>submit</b></button>
+    <button  type="submit" id="myButton" value="" style="font-size:30pt;" onsubmit= ><b>submit</b></button>
 
     </font>
     <style>
