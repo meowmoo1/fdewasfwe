@@ -2,7 +2,7 @@
   <style media="screen">
     input[type='number']{
     width: 140px;
-} 
+}
   </style>
 <form
 onsubmit="document.getElementById('myButton').disabled=true;
@@ -16,15 +16,58 @@ document.getElementById('myButton').value='Submitting, please wait...';"
 
     <div style="color:red;" class="text" style="font-size:pt;"> <b> Prematch </b></div>
     <br>
-      
+
     <input name="scouter name" type="text" placeholder="scouter name" style="font-size:25pt;" size="15" required>
+
         <br/>
         <br/>
     <input name="quaul num" type="number" placeholder="quaul num" style="font-size:25pt;"  required>
         <br />
         <br />
-     <input name="team num" type="number" placeholder="team num" style="font-size:25pt;" required>
+    <input list="names" name="team num" type="number" placeholder="team num" style="font-size:25pt;" required>
+    <datalist id="names">
+      <option value="310">
+      <option value="479">
+      <option value="3839">
+      <option value="4174">
+      <option value="5040">
+      <option value="5064">
+      <option value="5421">
+      <option value="5485">
+      <option value="6165">
+      <option value="7105">
+      <option value="7172">
+      <option value="7303">
+      <option value="9421">
+      <option value="9614">
+      <option value="9889">
+      <option value="11780">
+      <option value="11970">
+      <option value="12518">
+      <option value="12599">
+      <option value="12835">
+      <option value="12928">
+      <option value="12993">
+      <option value="13356">
+      <option value="14270">
+      <option value="14481">
+      <option value="14496">
+      <option value="15167">
+      <option value="15637">
+      <option value="16379">
+      <option value="16439">
+      <option value="16461">
+      <option value="17713">
+      <option value="18253">
+      <option value="18273">
+      <option value="18438">
+      <option value="18527">
+      <option value="18754">
+      <option value="19068">
+      <option value="19876">
+      <option value="20700">
 
+ </datalist>
         <br />
         <br />
         <label for="robot starting location" >robot starting location: </label>
@@ -72,18 +115,10 @@ document.getElementById('myButton').value='Submitting, please wait...';"
   <option value="no">no</option>
 </select>
         <br />
-        <br />
+        
 <font size=+3
     <font size="+1">
-    <p style="color:black">storage unit</p>
-    <!--<input name="storage unit" type="range" min="0" max="10" value="0" oninput="this.form.storageunit.value=this.value"  required />
-    <output id="this.form.storageunit" name="storageunit"></output>-->
-    <div class="number-input">
-      <button class="hihi" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:30pt;" >-</button>
-      <input min="0" name="storage unit" value="0" type="number" style="font-size:30pt;"  >
-      <button class="hihi" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus" style="font-size:30pt;">+</button>
     <!--<input name="high level" type="number" placeholder="high level" required>-->
-
 
     <!--<input name="high level" type="range" min="0" max="10" value="0" oninput="this.form.high.value=this.value"  required />
     <output id="this.form.high" name="high"></output>-->
@@ -113,9 +148,18 @@ document.getElementById('myButton').value='Submitting, please wait...';"
       <button class="hihi" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:30pt;">-</button>
       <input class="quantity" min="0" name="lower level" value="0" type="number" style="font-size:30pt;">
       <button class="hihi" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus" style="font-size:30pt;">+</button>
-
+<br>
+<br>
+<p style="color:black">storage unit</p>
+<!--<input name="storage unit" type="range" min="0" max="10" value="0" oninput="this.form.storageunit.value=this.value"  required />
+<output id="this.form.storageunit" name="storageunit"></output>-->
+<div class="number-input">
+  <button class="hihi" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:30pt;" >-</button>
+  <input min="0" name="storage unit" value="0" type="number" style="font-size:30pt;"  >
+  <button class="hihi" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus" style="font-size:30pt;">+</button>
     <br />
     <br />
+    
     <!--<input name="where the robot park?" type="text" placeholder="where the robot park?" required>-->
 <label for="where did the robot park?" >where did the robot park?: </label>
 <select name="where did the robot park?" id="where the robot park?" style="font-size:25pt;">
@@ -141,15 +185,7 @@ document.getElementById('myButton').value='Submitting, please wait...';"
 
     <!--<input name="storage unit (T)" type="number" placeholder="storage unit (T)" required>-->
 
-    <p style="color:black">storage unit (T)</p>
-    <!--<input name="storage unit (T)" type="range" min="0" max="10" value="0" oninput="this.form.StorageUnitT.value=this.value"  required />
-    <output id="this.form.StorageUnitT" name="StorageUnitT"></output>-->
-    <div class="number-input">
-      <button class="hihi" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:30pt;">-</button>
-      <input class="quantity" min="0" name="storage unit (T)" value="0" type="number" style="font-size:30pt;">
-      <button class="hihi" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus" style="font-size:30pt;">+</button>
-        <br />
-        <br />
+  
 
     <!--<input name="high level (T)" type="number" placeholder="high level (T)" required>-->
     <p style="color:black">high level (T)</p>
@@ -192,22 +228,24 @@ document.getElementById('myButton').value='Submitting, please wait...';"
       <button class="hihi" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:30pt;">-</button>
       <input class="quantity" min="0" name="share shiping hab (T)" value="0" type="number" style="font-size:30pt;">
       <button class="hihi" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus" style="font-size:30pt;">+</button>
+
         <br />
         <br />
+        <p style="color:black">storage unit (T)</p>
+        <!--<input name="storage unit (T)" type="range" min="0" max="10" value="0" oninput="this.form.StorageUnitT.value=this.value"  required />
+        <output id="this.form.StorageUnitT" name="StorageUnitT"></output>-->
+        <div class="number-input">
+          <button class="hihi" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:30pt;">-</button>
+          <input class="quantity" min="0" name="storage unit (T)" value="0" type="number" style="font-size:30pt;">
+          <button class="hihi" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus" style="font-size:30pt;">+</button>
+            <br />
+            <br />
         <hr/>
 
     <div style="color:red;" class="text"><b>endgame</b></div>
 
     <!--<input name="storage unit (EG)" type="number" placeholder="storage unit (EG)" required>-->
-    <p style="color:black">storage unit (EG)</p>
-    <!--<input name="storage unit (EG)" type="range" min="0" max="20" value="0" oninput="this.form.StorageUnitEG.value=this.value"  required />
-    <output id="this.form.StorageUnitEG" name="StorageUnitEG"></output>-->
-    <div class="number-input">
-      <button class="hihi" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:30pt;">-</button>
-      <input class="quantity" min="0" name="storage unit (EG)" value="0" type="number" style="font-size:30pt;">
-      <button class="hihi" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus" style="font-size:30pt;">+</button>
-        <br />
-        <br />
+
 
     <!--<input name="high level (EG)" type="number" placeholder="high level (EG)" required>-->
     <p style="color:black">high level (EG)</p>
@@ -252,7 +290,15 @@ document.getElementById('myButton').value='Submitting, please wait...';"
       <button class="hihi" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus" style="font-size:30pt;">+</button>
     <br />
     <br />
-    <br />
+    <p style="color:black">storage unit (EG)</p>
+    <!--<input name="storage unit (EG)" type="range" min="0" max="20" value="0" oninput="this.form.StorageUnitEG.value=this.value"  required />
+    <output id="this.form.StorageUnitEG" name="StorageUnitEG"></output>-->
+    <div class="number-input">
+      <button class="hihi" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:30pt;">-</button>
+      <input class="quantity" min="0" name="storage unit (EG)" value="0" type="number" style="font-size:30pt;">
+      <button class="hihi" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus" style="font-size:30pt;">+</button>
+        <br />
+        <br />
 
     <!--<input name="how much duck delivered" type="number" placeholder="how match duck delivered" required>-->
         <p style="color:black">how much duck delivered?</p>
@@ -288,7 +334,13 @@ document.getElementById('myButton').value='Submitting, please wait...';"
     <input name="did the robot play deffensively?" type="text" placeholder="did the robot play deffensively?" style="font-size:25pt;" size="15" required>
     <br />
     <br />
-    <input name="penalties?" type="text" placeholder="penalties?" style="font-size:25pt;" size="15" required>
+    <div class="number-input">
+      <label for="penalty">penalties:</label>
+      <br>
+      <br>
+      <button class="hihi" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:30pt;">-</button>
+      <input class="quantity" min="0" name="penalties" value="0" type="number" style="font-size:30pt;">
+      <button class="hihi" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus" style="font-size:30pt;">+</button>
     <br />
     <br />
     <input name="notes" type="text" placeholder="notes" style="font-size:25pt;" size="15" required>
@@ -308,4 +360,5 @@ document.getElementById('myButton').value='Submitting, please wait...';"
 
 </form>
       <body/>
+<html/>
 <html/>
